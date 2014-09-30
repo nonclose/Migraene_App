@@ -1,0 +1,50 @@
+<ion-view title="Neuer Eintrag">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>	
+		<div class="item item-divider"> 
+			Bitte erstellen Sie einen neuen Eintrag</div>
+		</div>
+		<label class="item item-input">
+		  <span class="input-label">Datum</span>
+		  <input type="date">
+		</label>
+		<label class="item item-input">
+		  <span class="input-label">Schmerzdauer</span>
+		  <input type="time">
+		</label>
+		<div class="item range range-positive">
+			<!--<h3>Schmerzst&auml;rke</h3>-->
+			<i class="icon ion-happy"></i>
+			<input type="range" name="volume" min="0" max="10" value="0">
+			<i class="icon ion-sad"></i>
+		</div>
+		<!--<ion-item ng-repeat="playlist in playlists" type="item-text-wrap" href="#/app/playlists/{{playlist.id}}">
+			 <h3>{{playlist.title}} </h3>
+		</ion-item>-->
+		<!--<ion-item type="item-text-wrap" href="#/app/playlists/{{playlist.id}}">
+			 <h3>Schmerzart und -ort</h3>
+		</ion-item>
+		<ion-item type="item-text-wrap" href="#/app/begleitsymptome">
+			 <h3>Begleitsymptome</h3>
+		</ion-item>
+		<ion-item type="item-text-wrap" href="#/app/ausloeser">
+			 <h3>Ausl&ouml;ser</h3>
+		</ion-item>
+		<ion-item type="item-text-wrap" href="#/app/medikamente">
+			 <h3>Medikamente</h3>
+		</ion-item>-->
+		<div class="btn-group">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				Schmerzart und -ort <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu">
+				<ion-radio ng-value="item.value" ng-repeat="item in schmerzartList">
+					<h3> {{ item.text }} </h3>
+				</ion-radio>
+			</ul>
+		</div>
+  </ion-content>
+</ion-view>

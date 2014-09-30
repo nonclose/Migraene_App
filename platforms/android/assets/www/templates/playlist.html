@@ -1,0 +1,25 @@
+<ion-view title="Schmerzart und - ort">
+  <ion-content class="has-header">
+	<div class="item item-divider">
+		Bitter w&auml;hlen Sie die Schmerzart aus:
+	</div>
+	<ion-radio ng-value="item.value" ng-repeat="item in schmerzartList">
+	    <h3> {{ item.text }} </h3>
+    </ion-radio>
+	<div class="item item-divider">
+		Bitter w&auml;hlen Sie den Schmerzort aus:
+	</div>
+	<!--<ion-item type="item-text-wrap" href="#">
+		 <h3>Linke Kopfseite</h3>
+	</ion-item>
+	<ion-item type="item-text-wrap" href="#">
+		 <h3>Rechte Kopfseite</h3>
+	</ion-item>-->
+	<button class="button button-full button-dark">
+		Linke Koftseite
+	</button>
+	<button class="button button-full button-dark">
+		Rechte Koftseite
+	</button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,37 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i>Zurück</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right">
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-positive">
+      <h1 class="title">Menü</h1>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+		 <ion-item nav-clear menu-close href="#/app/playlists">
+          Neuer Eintrag
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/tagesverlauf">
+          Tagesübersicht
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/gesamtverlauf">
+          Gesamtübersicht
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/wecker">
+          Medikamenten-Wecker
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/datenverwalten">
+          Daten verwalten
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/app/kontakt">
+          Kontakt
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

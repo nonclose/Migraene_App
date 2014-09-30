@@ -1,0 +1,55 @@
+<ion-view title="Daten verwalten">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right" class="button button-icon">Logo</button>
+  </ion-nav-buttons>
+  
+  <ion-content class="has-header">
+    <div class="item item-divider">
+		Ihr behandelnder Arzt
+	</div>
+	<div class="item">
+		<h3 class="boldtext">Dr. Max Mustermann</h3>
+		<h3>Musterstr. 1</h3>
+		<h3>01234 Musterstadt</h3>
+		<h3>Tel: 0123 456789</h3>
+		<h3>Fax: 0123 456789</h3>
+	</div>
+	<div class="item">
+		<h3 class="boldtext">Öffnungszeiten:</h3>
+		<div class="row">
+		  <div class="col-20"><h3>Mo.</h3></div>
+		  <div class="col"><h3>08.00 - 12.00</h3></div>
+		  <div class="col"></div>
+		</div>
+		<div class="row">
+		  <div class="col-20"><h3>Di.</h3></div>
+		  <div class="col"><h3>08.00 - 12.00</h3></div>
+		  <div class="col"><h3>14.00 - 18.00</h3></div>
+		</div>
+		<div class="row">
+		  <div class="col-20"><h3>Mi.</h3></div>
+		  <div class="col"><h3>08.00 - 12.00</h3></div>
+		  <div class="col"></div>
+		</div>
+		<div class="row">
+		  <div class="col-20"><h3>Do.</h3></div>
+		  <div class="col"><h3>08.00 - 12.00</h3></div>
+		  <div class="col"><h3>14.00 - 18.00</h3></div>
+		</div>
+		<div class="row">
+		  <div class="col-20"><h3>Fr.</h3></div>
+		  <div class="col"><h3>08.00 - 12.00</h3></div>
+		  <div class="col"></div>
+		</div>
+	</div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-light button-block  button-large">
+		<div class="buttons" ng-click="doSomething()">
+			<!--<button class="button button-block button-assertive">Arzt anrufen</button>-->
+			<a class="button icon-left ion-ios7-telephone button-block button-assertive" ng-href="tel: {{phoneno}}">Arzt anrufen</a>
+		</div>
+	</ion-footer-bar>
+</ion-view>
